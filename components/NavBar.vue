@@ -60,17 +60,11 @@
 </template>
 
 <script>
-import ActionButtons from "@/components/ActionButtons";
-// import 'vue-awesome/icons/bed'
-// import '~/assets/js/utils/icons/receipt'
-// import 'vue-awesome/icons/dollar'
-// import 'vue-awesome/icons/line-chart'
-// import Icon from 'vue-awesome/components/Icon'
+import ActionButtons from "~/components/ActionButtons";
 
 export default {
   components: {
-    ActionButtons //,
-    // Icon
+    ActionButtons
   },
   computed: {
     showNavSideBar() {

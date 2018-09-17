@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import ImportModal from "@/components/ImportModal.vue";
+import ImportModal from "~/components/ImportModal.vue";
 
 import { download } from "~/assets/js/utils/fileUtil";
 

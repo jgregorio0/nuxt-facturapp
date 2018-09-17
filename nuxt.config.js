@@ -26,14 +26,22 @@ module.exports = {
   ** Modules
   */
   modules: ["@nuxtjs/pwa", "bootstrap-vue/nuxt", "nuxt-fontawesome"],
-
+  /*
+  ** fontawesome
+  */
   fontawesome: {
     component: "fa",
     imports: [
       {
         set: "@fortawesome/free-solid-svg-icons",
         icons: [
-          "faSave", 'faFolderOpen', 'faTrash', 'faBed', 'faReceipt', 'faDollarSign', 'faChartLine'
+          "faSave",
+          "faFolderOpen",
+          "faTrash",
+          "faBed",
+          "faReceipt",
+          "faDollarSign",
+          "faChartLine"
         ]
       }
     ]
@@ -42,4 +50,14 @@ module.exports = {
    ** plugins
    */
   plugins: [{ src: "~/plugins/persisteStateInCookies.js", ssr: false }],
+  /*
+  ** Router
+  */
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push(
+        { path: "*", component: resolve(__dirname, "pages/guests/index.vue") }
+      );
+    }
+  }
 };
