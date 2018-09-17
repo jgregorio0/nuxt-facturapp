@@ -10,13 +10,6 @@ node_modules
 # Nuxt generate
 dist
 
-# Intellij idea
-.idea
-*iml
-
-# Vagrant machine
-.vagrant
-
 # VSCode
 .vscode/*
 !.vscode/settings.json
@@ -28,3 +21,13 @@ dist
 static/manifest*.json
 static/sw.js
 static/workbox-sw*.js
+
+# Intellij idea
+.idea
+*iml
+
+# Visual Studio Code
+.history
+
+# Vagrant machine
+.vagrant
