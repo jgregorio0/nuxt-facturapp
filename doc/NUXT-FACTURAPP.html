@@ -1,0 +1,674 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.0.6.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2018-09-17T09:38:48.204749700"/>
+	<style type="text/css">
+		@page { margin: 2.54cm }
+		p { margin-bottom: 0.25cm; line-height: 120% }
+		h1 { margin-top: 0.71cm; margin-bottom: 0.21cm; direction: ltr; line-height: 100%; text-align: left; page-break-inside: avoid; orphans: 2; widows: 2 }
+		h1.western { font-family: "Arial", serif; font-size: 20pt; font-weight: normal }
+		h1.cjk { font-size: 20pt; font-weight: normal }
+		h1.ctl { font-size: 20pt; font-weight: normal }
+		h2 { margin-top: 0.64cm; direction: ltr; line-height: 100%; text-align: left; page-break-inside: avoid; orphans: 2; widows: 2 }
+		h2.western { font-family: "Arial", serif; font-size: 16pt; font-weight: normal }
+		h2.cjk { font-family: "Arial"; font-size: 16pt; font-weight: normal }
+		h2.ctl { font-family: "Arial"; font-size: 16pt; font-weight: normal }
+		pre.western { font-family: "Arial", serif; font-size: 11pt }
+		pre.cjk { font-family: "Arial"; font-size: 11pt }
+		pre.ctl { font-family: "Arial"; font-size: 11pt }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="es" dir="ltr">
+<p align="left" style="margin-bottom: 0.11cm; line-height: 100%; page-break-inside: avoid; orphans: 2; widows: 2; page-break-after: avoid"><a name="_9gpw6zpd2bct"></a>
+<font size="6" style="font-size: 26pt">	 	 	NUXT-FACTURAPP</font></p>
+<h1 class="western" style="margin-top: 0.85cm; line-height: 100%; page-break-inside: auto; page-break-after: auto"><a name="_dpt6v64nk6h3"></a>
+<font size="6" style="font-size: 23pt"><b>1 Requerimientos</b></font></h1>
+<h2 class="western" style="margin-bottom: 0.14cm; line-height: 100%; page-break-inside: auto; page-break-after: auto"><a name="_3z7zc4d54i77"></a>
+<font size="5" style="font-size: 17pt"><b>1.1 Node JS y NPM con NVM</b></font></h2>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#fc9b9b"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">$</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			git </span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">clone</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			https://github.com/creationix/nvm.git ~/.nvm &amp;&amp; </span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">cd</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			~/.nvm 	&amp;&amp; git checkout `git describe --abbrev=0 --tags`<br/>
+</span></font></font></font><font color="#fc9b9b"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">$</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			</span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">echo</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;source
+			~/.nvm/nvm.sh&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			&gt;&gt; ~/.profile<br/>
+</span></font></font></font><font color="#fc9b9b"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">$</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			</span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">source</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			~/.profile<br/>
+</span></font></font></font><font color="#fc9b9b"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">$</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			nvm install 8.11.4<br/>
+</span></font></font></font><font color="#fc9b9b"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">$</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			nvm </span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">alias</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			default 8.11.4<br/>
+</span></font></font></font><font color="#fc9b9b"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">$</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			node -v<br/>
+</span></font></font></font><font color="#fc9b9b"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">$</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			npm -v</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<h2 class="western" style="margin-bottom: 0.14cm; line-height: 100%; page-break-inside: auto; page-break-after: auto"><a name="_nqo93lyugjyg"></a>
+<font size="5" style="font-size: 17pt"><b>1.2 VUE CLI &amp; PWA
+TEMPLATE</b></font></h2>
+<p style="margin-bottom: 0cm; line-height: 115%"><a href="https://github.com/nuxt-community/pwa-template"><font color="#1155cc"><u>https://github.com/nuxt-community/pwa-template</u></font></a></p>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="margin-bottom: 0cm; border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">npm
+			</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">install</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			-g vue-cli</span></font></font></font></p>
+			<pre class="western" style="border: none; padding: 0cm; text-align: left; orphans: 0; widows: 0"><span style="font-variant: normal"><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: #333333">vue init nuxt-community/pwa-template my-project  </span></span></span></span></font></font></font></span><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+cd my-</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">project</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+npm </span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">install</span></font></font></font></pre>
+		</td>
+	</tr>
+</table>
+<h1 class="western" style="margin-top: 0.85cm; line-height: 100%; page-break-inside: auto; page-break-after: auto"><a name="_l0j4xuigtez7"></a>
+<font size="6" style="font-size: 23pt"><b>2 Configuración</b></font></h1>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;config&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			{<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;nuxt&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			{<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;host&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;0.0.0.0&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;port&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;3000&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+}<br/>
+},</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<h1 class="western" style="margin-top: 0.85cm; line-height: 100%; page-break-inside: auto; page-break-after: auto"><a name="_1ogus8nm2b56"></a>
+<font size="6" style="font-size: 23pt"><b>3 Instalación</b></font></h1>
+<ol>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">	</p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">Anadir 	todas
+	las dependencias dejando Nuxt y los modulos al final</p>
+</ol>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;dependencies&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			{<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;animate.css&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^3.5.2&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;bootstrap&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^4.0.0&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;bootstrap-vue&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^2.0.0-rc.2&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;chart.js&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^2.7.1&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;html2canvas&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^1.0.0-alpha.10&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;js-cookie&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^2.2.0&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;jspdf&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^1.3.5&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;jspdf-autotable&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^2.3.2&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;lodash&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^4.17.5&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;moment&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^2.19.3&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;vue&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^2.5.2&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;vue-awesome&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^2.3.4&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;vue-chartjs&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^3.1.1&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;vuex-persistedstate&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^2.5.4&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;nuxt&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;latest&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;@nuxtjs/pwa&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;latest&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+},</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<ol>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">	</p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">Ejecutar
+	instalación 	borrando previamente node_modules</p>
+</ol>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">rm
+			-rf ..</span></font></font></font><font color="#c6b4f0"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">/node_modules/</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">*
+			..</span></font></font></font><font color="#c6b4f0"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">/node_modules/</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">.*<br/>
+rm
+			-f package-lock.json<br/>
+</span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">npm</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			cache clean --force<br/>
+</span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">npm</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			i</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<h1 class="western" style="margin-top: 0.85cm; line-height: 100%; page-break-inside: auto; page-break-after: auto"><a name="_li40bsih2h9x"></a>
+<font size="6" style="font-size: 23pt"><b>4 Comandos</b></font></h1>
+<ol>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">	</p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">Forzar
+		cambios en los componentes .vue</p>
+</ol>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">find
+			-name </span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;*.vue&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			-</span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">exec</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			touch {} +</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<ol>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">	</p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">Reinstalar
+	módulos</p>
+</ol>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">rm</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			-rf node_modules<br/>
+</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">rm</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			-f package-lock.json<br/>
+npm cache clean --force<br/>
+npm </span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">i</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<h1 class="western" style="margin-top: 0.85cm; line-height: 100%; page-break-inside: auto; page-break-after: auto"><a name="_on0e8sbl32bs"></a>
+<font size="6" style="font-size: 23pt"><b>5 Store</b></font></h1>
+<p style="margin-bottom: 0cm; line-height: 115%">Con Nuxt el módulo
+<b>vuex-persistedstate</b> debe ser incluido como plugin:</p>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#888888"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">//
+			nuxt.config.js</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+<br/>
+<br/>
+...<br/>
+plugins:
+			[{ src: </span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'~/plugins/localStorage.js'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,
+			ssr: </span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">false</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			}]<br/>
+...<br/>
+</span></font></font></font><font color="#888888"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">//
+			~/plugins/localStorage.js</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+<br/>
+<br/>
+</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">import</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			createPersistedState </span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">from</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'vuex-persistedstate'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+<br/>
+<br/>
+</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">export</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">default</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			({store}) =&gt; {<br/>
+createPersistedState({<br/>
+key:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'yourkey'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+paths:
+			[...]<br/>
+...<br/>
+})(store)<br/>
+}</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<h1 class="western" style="margin-top: 0.85cm; line-height: 100%; page-break-inside: auto; page-break-after: auto"><a name="_dms1xzze58m5"></a>
+<font size="6" style="font-size: 23pt"><b>6 Bootstrap</b></font></h1>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%"><b>nuxt.config.js</b></p>
+</ul>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">const
+			webpack = </span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">require</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">(</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'webpack'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">)<br/>
+<br/>
+<br/>
+</span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">module</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">.exports
+			= {<br/>
+build: {<br/>
+vendor: [</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'jquery'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'bootstrap'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">],<br/>
+plugins:
+			[<br/>
+</span></font></font></font><font color="#c6b4f0"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">//</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			set shortcuts </span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">as</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			</span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">global</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">for</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			bootstrap<br/>
+</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">new</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			webpack.ProvidePlugin({<br/>
+$: </span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'jquery'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+jQuery:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'jquery'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'window.jQuery'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'jquery'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+})<br/>
+]<br/>
+},<br/>
+</span></font></font></font><font color="#c6b4f0"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">//</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			include bootstrap css<br/>
+css:
+			[</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'bootstrap/dist/css/bootstrap.css'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">],<br/>
+</span></font></font></font><font color="#c6b4f0"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">//</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			include bootstrap js </span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">on</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			startup<br/>
+plugins: [</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'~plugins/bootstrap.js'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">]<br/>
+}</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; line-height: 115%">
+<br/>
+
+</p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%"><b>plugins/bootstrap.js</b></p>
+</ul>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#888888"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">//
+			Include bootstrap JS only</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">if</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			(</span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">process</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">.BROWSER_BUILD)
+			{<br/>
+require(</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'bootstrap'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">)<br/>
+}</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; line-height: 115%">
+	</p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%"><b>pages/index.vue
+	(example)</b></p>
+</ul>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">template</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#888888"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;!--
+			Nav tabs --&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">ul</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			class=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;nav
+			nav-tabs&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tablist&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">li</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;presentation&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			class=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;active&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">a</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			href=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;#home&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			aria-controls=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;home&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			data-toggle=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">Home</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">a</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">li</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">li</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;presentation&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">a</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			href=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;#profile&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			aria-controls=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;profile&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			data-toggle=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">Profile</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">a</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">li</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">li</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;presentation&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">a</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			href=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;#messages&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			aria-controls=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;messages&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			data-toggle=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">Messages</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">a</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">li</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">li</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;presentation&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">a</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			href=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;#settings&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			aria-controls=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;settings&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			data-toggle=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">Settings</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">a</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">li</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">ul</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#888888"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;!--
+			Tab panes --&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			class=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab-content&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tabpanel&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			class=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab-pane
+			active&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			id=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;home&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">Home
+			text...</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tabpanel&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			class=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab-pane&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			id=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;profile&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">Profile
+			text...</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tabpanel&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			class=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab-pane&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			id=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;messages&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">Messages
+			text...</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			role=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tabpanel&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			class=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;tab-pane&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			id=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;settings&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">Settings
+			text...</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">template</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<h1 class="western" style="margin-top: 0.85cm; line-height: 100%; page-break-inside: auto; page-break-after: auto"><a name="_by8wmxxsgvoo"></a>
+<font size="6" style="font-size: 23pt"><b>7 Bootstrap-vue</b></font></h1>
+<p style="margin-bottom: 0cm; line-height: 115%">	</p>
+<ol>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 100%"><span style="background: #ffffff">	</span><font color="#212529"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Instalar
+		dependencia boostrap-vue</span></font></font></font></p>
+</ol>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">npm</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			i bootstrap-vue</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; line-height: 115%">
+<br/>
+
+</p>
+<ol start="2">
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 100%"><span style="background: #ffffff">	</span><font color="#212529"><font face="Times New Roman, serif"><font size="3" style="font-size: 12pt"><span style="background: #ffffff">Anadir
+		bootstrap como modulo en la configuración de Nuxt</span></font></font></font></p>
+</ol>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; line-height: 115%">
+<br/>
+
+</p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%"><b>nuxt.config.js</b></p>
+</ul>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">{<br/>
+</span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">modules</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			[<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'bootstrap-vue/nuxt'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+<br/>
+<br/>
+//
+			Or if you have custom bootstrap CSS...<br/>
+[</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'bootstrap-vue/nuxt'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,
+			{ css: false }],<br/>
+]<br/>
+}</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<h1 class="western" style="margin-top: 0.85cm; line-height: 100%; page-break-inside: auto; page-break-after: auto"><a name="_nki3dyvxlik4"></a>
+<font size="6" style="font-size: 23pt"><b>8 Font awesome</b></font></h1>
+<p style="margin-bottom: 0cm; line-height: 115%">	</p>
+<ol>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">Incluir
+	dependencia del 	módulo font-awesome por encima de nuxt</p>
+</ol>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;dependencies&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			{<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;@fortawesome/free-solid-svg-icons&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^5.3.1&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;nuxt-fontawesome&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;^0.3.0&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;nuxt&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;latest&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+},</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 115%">En caso de que build
+falle añadir:</p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">//
+		&quot;@fortawesome/fontawesome-svg-core&quot;: &quot;^1.2.4&quot;,</p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">//
+		&quot;@fortawesome/vue-fontawesome&quot;: &quot;^0.1.1&quot;,</p>
+</ul>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<p style="margin-left: 1.27cm; margin-bottom: 0cm; line-height: 115%">
+<br/>
+
+</p>
+<ol start="2">
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">Anadirlo al
+		fichero <b>nuxt.config.js</b></p>
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">	</p>
+</ol>
+<p style="margin-bottom: 0cm; line-height: 115%">	</p>
+<ol start="2">
+	<ul>
+		<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">Se puede
+		importar el 		conjunto completo o solo unos iconos</p>
+	</ul>
+</ol>
+<p style="margin-bottom: 0cm; line-height: 115%">	</p>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#888888"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">/*<br/>
+**
+			Modules<br/>
+*/</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">modules</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			[&quot;&quot;nuxt-fontawesome&quot;],<br/>
+</span></font></font></font><font color="#888888"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">/*<br/>
+**
+			fontawesome<br/>
+*/</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">fontawesome</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			{<br/>
+</span></font></font></font><font color="#ffffaa"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">component</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">:
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;fa&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+imports:
+			[<br/>
+{<br/>
+set: </span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;@fortawesome/free-solid-svg-icons&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+icons:
+			[<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;faSave&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;faFolderOpen&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;faTrash&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;faBed&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;faReceipt&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;faDollarSign&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">,<br/>
+</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;faChartLine&quot;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+]<br/>
+}<br/>
+]<br/>
+},<br/>
+</span></font></font></font><br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 115%">	</p>
+<ol start="4">
+	<li/>
+<p style="margin-bottom: 0cm; line-height: 115%">Para
+		utilizarlo</p>
+</ol>
+<table width="602" cellpadding="7" cellspacing="0">
+	<col width="588">
+	<tr>
+		<td width="588" valign="top" bgcolor="#333333" style="background: #333333" style="border: none; padding: 0cm">
+			<p align="left" style="border: none; padding: 0cm; page-break-inside: auto; orphans: 0; widows: 0; page-break-after: auto">
+			<font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">template</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">fa</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			:icon=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;fas.faAddressBook&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			/&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">fa</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			:icon=</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&quot;faGithub&quot;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			/&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">div</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">template</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">script</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">import</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			{ fas } </span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">from</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'@fortawesome/free-solid-svg-icons'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">import</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			{ faGithub } </span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">from</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			</span></font></font></font><font color="#a2fca2"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">'@fortawesome/free-brands-svg-icons'</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333"><br/>
+</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">export</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">default</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			{<br/>
+computed: {<br/>
+fas () {<br/>
+</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">return</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			fas<br/>
+},<br/>
+faGithub () {<br/>
+</span></font></font></font><font color="#fcc28c"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">return</span></font></font></font><font color="#ffffff"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">
+			faGithub<br/>
+}<br/>
+},<br/>
+}<br/>
+</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&lt;/</span></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><b><span style="background: #333333">script</span></b></font></font></font><font color="#62c8f3"><font face="Consolas, serif"><font size="2" style="font-size: 10pt"><span style="background: #333333">&gt;</span></font></font></font></p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+<h1 class="western" style="margin-top: 0.85cm; line-height: 100%; page-break-inside: auto; page-break-after: auto"><a name="_e3v2cd7oaz57"></a>
+<font size="6" style="font-size: 23pt"><b>9 PWA</b></font></h1>
+<p style="margin-bottom: 0cm; line-height: 115%"><a href="https://pwa.nuxtjs.org/modules/manifest.html"><font color="#1155cc"><u>https://pwa.nuxtjs.org/modules/manifest.html</u></font></a></p>
+<p style="margin-bottom: 0cm; line-height: 115%"><br/>
+
+</p>
+</body>
+</html>
