@@ -2,11 +2,11 @@
   <div>
     <header>
       <NavBar></NavBar>
+      <Cookies></Cookies>
     </header>
 
     <section>
-      <!--<app-nav-wizard v-show="this.$route.name != 'home'"></app-nav-wizard>-->
-      NAV_WIZARD
+      <NavWizard></NavWizard>
       <transition
         appear
         appear-active-class="animated zoomIn"
@@ -14,8 +14,7 @@
         :name="direction">
         <nuxt/>
       </transition>
-      <!--<app-nav-wizard v-show="this.$route.name != 'home'"></app-nav-wizard>-->
-      NAV_WIZARD
+      <NavWizard></NavWizard>
     </section>
 
     <!--<footer></footer>-->
@@ -23,13 +22,15 @@
 </template>
 
 <script>
-  import NavBar from '@/components/NavBar.vue'
-  // import NavWizard from '@/components/NavWizard.vue'
+  import NavBar from '~/components/navigation/NavBar.vue'
+  import NavWizard from '~/components/navigation/NavWizard.vue'
+  import Cookies from '~/components/Cookies.vue'
 
   export default {
     components: {
       NavBar,
-      // 'app-nav-wizard': NavWizard
+      NavWizard,
+      Cookies
     },
     computed: {
       direction () {

@@ -1,5 +1,5 @@
 <template>
-  <div>Index principal 
+  <div>Index principal
     <fa icon="save" />
     <fa icon="folder-open" />
     <fa icon="trash" />
@@ -7,6 +7,9 @@
     <fa icon="receipt" />
     <fa icon="dollar-sign" />
     <fa icon="chart-line" />
+    <fa icon="info" />
+    <fa icon="chevron-down" />
+    <fa icon="chevron-up" />
   </div>
 </template>
 <script>
