@@ -1,34 +1,34 @@
 module.exports = {
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {},
   /*
-  ** Headers
-  ** Common headers are already provided by @nuxtjs/pwa preset
-  */
+   ** Headers
+   ** Common headers are already provided by @nuxtjs/pwa preset
+   */
   head: {},
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: "#3B8070" },
   /*
-  ** Customize app manifest
-  */
+   ** Customize app manifest
+   */
   manifest: {
     theme_color: "#3B8070"
   },
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   // css: ['bootstrap/dist/css/bootstrap.css.map'],
   /*
-  ** Modules
-  */
+   ** Modules
+   */
   modules: ["@nuxtjs/pwa", "bootstrap-vue/nuxt", "nuxt-fontawesome"],
   /*
-  ** fontawesome
-  */
+   ** fontawesome
+   */
   fontawesome: {
     component: "fa",
     imports: [
@@ -41,7 +41,11 @@ module.exports = {
           "faBed",
           "faReceipt",
           "faDollarSign",
-          "faChartLine"
+          "faChartLine",
+          "faInfo",
+          "faChevronDown",
+          "faChevronUp",
+          "faCog"
         ]
       }
     ]
@@ -51,13 +55,14 @@ module.exports = {
    */
   plugins: [{ src: "~/plugins/persisteStateInCookies.js", ssr: false }],
   /*
-  ** Router
-  */
+   ** Router
+   */
   router: {
     extendRoutes(routes, resolve) {
-      routes.push(
-        { path: "*", component: resolve(__dirname, "pages/guests/index.vue") }
-      );
+      routes.push({
+        path: "*",
+        component: resolve(__dirname, "pages/guests/index.vue")
+      });
     }
   }
 };
