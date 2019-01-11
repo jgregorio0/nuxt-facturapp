@@ -45,7 +45,8 @@ module.exports = {
           "faInfo",
           "faChevronDown",
           "faChevronUp",
-          "faCog"
+          "faCog",
+          "faFilePdf"
         ]
       }
     ]
