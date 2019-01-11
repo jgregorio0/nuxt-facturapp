@@ -41,15 +41,15 @@
 </script>
 
 <style scoped>
-  .left-enter {
-  }
+  /* .left-enter {
+  } */
 
   .left-enter-active {
     animation: fadeInLeft 0.4s ease-out forwards;
   }
 
-  .left-leave {
-  }
+  /* .left-leave {
+  } */
 
   .left-leave-active {
     animation: fadeOutRight 0.2s ease-out forwards;
@@ -78,15 +78,15 @@
     }
   }
 
-  .right-enter {
-  }
+  /* .right-enter {
+  } */
 
   .right-enter-active {
     animation: fadeInRight 0.4s ease-out forwards;
   }
 
-  .right-leave {
-  }
+  /* .right-leave {
+  } */
 
   .right-leave-active {
     animation: fadeOutLeft 0.2s ease-out forwards;
