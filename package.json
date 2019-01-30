@@ -5,6 +5,8 @@
   "author": "jgregorio",
   "private": true,
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.3.1",
+    "@nuxtjs/pwa": "latest",
     "animate.css": "^3.5.2",
     "bootstrap": "^4.0.0",
     "bootstrap-vue": "^2.0.0-rc.2",
@@ -15,13 +17,12 @@
     "jspdf-autotable": "^2.3.2",
     "lodash": "^4.17.5",
     "moment": "^2.19.3",
+    "nuxt": "latest",
+    "nuxt-fontawesome": "^0.3.0",
+    "pdfmake": "^0.1.40",
     "vue": "^2.5.2",
     "vue-chartjs": "^3.1.1",
-    "vuex-persistedstate": "^2.5.4",
-    "@fortawesome/free-solid-svg-icons": "^5.3.1",
-    "nuxt-fontawesome": "^0.3.0",
-    "nuxt": "latest",
-    "@nuxtjs/pwa": "latest"
+    "vuex-persistedstate": "^2.5.4"
   },
   "config": {
     "nuxt": {
@@ -36,7 +37,13 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "test": "jest"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
   },
   "devDependencies": {
     "babel-eslint": "^7.1.1",
@@ -45,6 +52,7 @@
     "eslint-loader": "^1.6.1",
     "eslint-plugin-html": "^2.0.0",
     "eslint-plugin-promise": "^3.4.1",
-    "eslint-plugin-standard": "^2.0.1"
+    "eslint-plugin-standard": "^2.0.1",
+    "jest": "^23.6.0"
   }
 }
