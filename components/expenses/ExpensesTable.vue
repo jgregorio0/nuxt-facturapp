@@ -97,14 +97,11 @@
                     <span class="d-block font-weight-bold p-1">Gasto total</span>
                   </b-col>
                   <b-col>
-                    <span
+                    <b-button size="sm" variant="secondary"
                       class="download-pdf float-right ml-1"
-                      v-b-tooltip.hover="'Descargar PDF con los gastos de todos los inquilinos'"
-
-                    >
-                    <!-- @click="downloadPdfbyGuests(guests)" -->
-                      <fa icon="file-pdf"/>
-                    </span>
+                      @click="downloadPdfbyGuests(guests)">
+                      <fa icon="file-pdf" style="font-size: 20px"/>
+                    </b-button>
                     <span class="float-right money p-1">{{ sumCalcCostByGuest }}</span>
                   </b-col>
                 </b-row>
@@ -127,7 +124,10 @@ import {
   validateObject
 } from '~/assets/js/utils/expensesUtil'
 import { diffDaysStr, minFromStr, maxToStr } from '~/assets/js/utils/dateUtil'
-// import { generatePDFTables } from '~/assets/js/utils/pdfUtil'
+import pdf from '~/assets/js/utils/pdfUtil'
+// import Jspdf from 'jspdf'
+import pdfmake from 'pdfmake/build/pdfmake'
+import pdfFonts from 'pdfmake/build/vfs_fonts'
 
 export default {
   name: 'ExpensesTable',
@@ -209,76 +209,73 @@ export default {
       return this.isActiveCollapse(index) ? 'Ocultar detalle' : 'Ver detalle'
     },
     downloadPdfbyGuests (guests) {
-      let tables = []
-      // Facturas
-      let titleInvoices = 'Facturas'
-      let headerInvoices = [
-        'Tipo',
-        'Importe',
-        'Desde',
-        'Hasta',
-        'Días',
-        'Importe/Día'
-      ]
-      let bodyInvoices = []
-
-      for (let invoice of this.invoices) {
-        bodyInvoices.push([
-          invoice.type,
-          invoice.price,
-          invoice.from,
-          invoice.to,
-          diffDaysStr(invoice.from, invoice.to).toFixed(0),
-          invoice.pricePerDay.toFixed(2)
-        ])
-      }
-      tables.push({
-        title: titleInvoices,
-        header: headerInvoices,
-        body: bodyInvoices,
-        footer: 'TOTAL: ' + calcCostByInvoices(this.invoices).toFixed(2)
-      })
-
-      // Gasto por inquilino
-      let headerGuests = [
-        'Inquilino',
-        'Tipo',
-        'Importe',
-        'Desde',
-        'Hasta',
-        'Gasto'
-      ]
-      //        let table = [['Inquilino', 'Tipo', 'Importe', 'Desde', 'Hasta', 'Gasto']]
-      for (let guest of guests) {
-        let titleGuests =
-          'Gasto de ' + guest.name + ': ' + this.costsByGuest(guest)
-        let bodyGuests = []
+      console.log('downloadPdfByGuests :', guests, process.client)
+      if (process.client) {
+        // init pdfmake
+        pdfmake.vfs = pdfFonts.pdfMake.vfs
+        // invoices to PDF
+        // invoices header
+        let invoicesHeaders = [
+          'Tipo',
+          'Importe',
+          'Desde',
+          'Hasta',
+          'Días',
+          'Importe / Día'
+        ]
+        // invoices rows
+        let invoicesRows = []
         for (let invoice of this.invoices) {
-          bodyGuests.push([
-            guest.name,
+          invoicesRows.push([
             invoice.type,
             invoice.price,
             invoice.from,
             invoice.to,
-            this.costsByGuestAndInvoice(guest, invoice)
+            diffDaysStr(invoice.from, invoice.to).toFixed(0),
+            invoice.pricePerDay.toFixed(2)
           ])
         }
-
-        tables.push({
-          title: titleGuests,
-          header: headerGuests,
-          body: bodyGuests
-        })
+        // invoices footer
+        let invoicesFooter =
+          'TOTAL: ' + calcCostByInvoices(this.invoices).toFixed(2)
+        // generate content for invoices
+        let content = pdf.pdfTable(
+          'Facturas',
+          invoicesHeaders,
+          invoicesRows,
+          invoicesFooter
+        )
+        // guests to PDF
+        // Guest Header
+        let guestHeaders = ['Inquilino', 'Tipo', 'Importe', 'Desde', 'Hasta', 'Gasto']
+        // For each guest
+        for (let guest of guests) {
+          // Guest Rows
+          let guestRows = []
+          for (let invoice of this.invoices) {
+            guestRows.push(
+              [guest.name, invoice.type, invoice.price, invoice.from, invoice.to,
+                this.costsByGuestAndInvoice(guest, invoice)])
+          }
+          // Guest Footer
+          let guestFooter = 'TOTAL: ' + this.costsByGuest(guest)
+          // Add to PDF content
+          content = pdf.pdfTable(
+            'Gastos de ' + guest.name,
+            guestHeaders,
+            guestRows,
+            guestFooter,
+            content)
+        }
+        // PDF MAKE
+        let docDefinition = pdf.pdfDefinition(content)
+        let docFileName = 'Gastos_' +
+              minFromStr(this.invoices) +
+              '_' +
+              maxToStr(this.invoices) +
+              '.pdf'
+        pdfmake.createPdf(docDefinition).download(docFileName, {}, window)
       }
-      /*
-      TODO generatePDFTables(
-        tables,
-        'Gastos_' +
-          minFromStr(this.invoices) +
-          '_' +
-          maxToStr(this.invoices) +
-          '.pdf'
-      ) */
     }
   }
 }
