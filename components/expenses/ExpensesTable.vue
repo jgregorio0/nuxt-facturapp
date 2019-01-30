@@ -98,6 +98,7 @@
                   </b-col>
                   <b-col>
                     <b-button size="sm" variant="secondary"
+                      v-b-tooltip title="Descarga todos los gastos en PDF"
                       class="download-pdf float-right ml-1"
                       @click="downloadPdfbyGuests(guests)">
                       <fa icon="file-pdf" style="font-size: 20px"/>
