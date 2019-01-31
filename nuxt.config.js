@@ -11,42 +11,42 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#3B8070" },
+  loading: { color: '#3B8070' },
   /*
    ** Customize app manifest
    */
   manifest: {
-    theme_color: "#3B8070"
+    theme_color: '#3B8070'
   },
   /*
    ** Global CSS
    */
-  // css: ['bootstrap/dist/css/bootstrap.css.map'],
+  // css: ['@/assets/css/main.css'],
   /*
    ** Modules
    */
-  modules: ["@nuxtjs/pwa", "bootstrap-vue/nuxt", "nuxt-fontawesome"],
+  modules: ['@nuxtjs/pwa', 'bootstrap-vue/nuxt', 'nuxt-fontawesome'],
   /*
    ** fontawesome
    */
   fontawesome: {
-    component: "fa",
+    component: 'fa',
     imports: [
       {
-        set: "@fortawesome/free-solid-svg-icons",
+        set: '@fortawesome/free-solid-svg-icons',
         icons: [
-          "faSave",
-          "faFolderOpen",
-          "faTrash",
-          "faBed",
-          "faReceipt",
-          "faDollarSign",
-          "faChartLine",
-          "faInfo",
-          "faChevronDown",
-          "faChevronUp",
-          "faCog",
-          "faFilePdf"
+          'faSave',
+          'faFolderOpen',
+          'faTrash',
+          'faBed',
+          'faReceipt',
+          'faDollarSign',
+          'faChartLine',
+          'faInfo',
+          'faChevronDown',
+          'faChevronUp',
+          'faCog',
+          'faFilePdf'
         ]
       }
     ]
@@ -54,16 +54,16 @@ module.exports = {
   /*
    ** plugins
    */
-  plugins: [{ src: "~/plugins/persisteStateInCookies.js", ssr: false }],
+  plugins: [{ src: '~/plugins/persisteStateInCookies.js', ssr: false }],
   /*
    ** Router
    */
   router: {
-    extendRoutes(routes, resolve) {
+    extendRoutes (routes, resolve) {
       routes.push({
-        path: "*",
-        component: resolve(__dirname, "pages/guests/index.vue")
-      });
+        path: '*',
+        component: resolve(__dirname, 'pages/guests/index.vue')
+      })
     }
   }
-};
+}

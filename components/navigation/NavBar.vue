@@ -60,25 +60,25 @@
 </template>
 
 <script>
-import ActionButtons from "~/components/navigation/ActionButtons";
+import ActionButtons from '~/components/navigation/ActionButtons'
 
 export default {
   components: {
     ActionButtons
   },
   computed: {
-    showNavSideBar() {
-      return this.$store.getters.showNavSideBar;
+    showNavSideBar () {
+      return this.$store.getters.showNavSideBar
     }
   },
   methods: {
-    chNavSideBar() {
-      this.$store.commit("setShowNavSideBar", {
+    chNavSideBar () {
+      this.$store.commit('setShowNavSideBar', {
         showNavSideBar: !this.showNavSideBar
-      });
+      })
     }
   }
-};
+}
 </script>
 
 <style scoped>
