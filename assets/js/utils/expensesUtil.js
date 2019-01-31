@@ -394,8 +394,8 @@ export function sumPricePerDayForAllAndTypes (invoices, days) {
 
       // if day is between [from, to] invoice range
       if (isTimeBetweenRangeTime(day, from, to, true, false)) {
-        /* console.log('isTimeBetweenRangeTime', day, from, to)
-         console.log('isTimeBetweenRangeTime',
+        /* // console.log('isTimeBetweenRangeTime', day, from, to)
+         // console.log('isTimeBetweenRangeTime',
          formatTimeMillis(day), "[" + formatTimeMillis(from), formatTimeMillis(to) + ")") */
 
         // sum to all

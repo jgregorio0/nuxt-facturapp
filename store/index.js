@@ -45,7 +45,6 @@ const store = () => {
     },
     mutations: {
       cookiesEnabled: (state, isCookiesEnabled) => {
-        console.log('cookiesEnabled :', isCookiesEnabled)
         state.cookiesEnabled = isCookiesEnabled
       },
       addInvoice: (state, payload) => {
@@ -55,7 +54,6 @@ const store = () => {
         state.invoices.push(payload)
       },
       rmInvoice: (state, payload) => {
-        console.log('rmInvoice index :', payload.index)
         state.allInvoices.splice(payload.index, 1)
         updateIndexes(state.allInvoices, payload.index)
       },
@@ -81,10 +79,8 @@ const store = () => {
       },
       updateDirection: (state, payload) => {
         if (payload.prevId < payload.currId) {
-          // console.log('direction to right', payload.prevId, "<", payload.currId)
           state.direction = 'right'
         } else {
-          // console.log('direction to left', payload.prevId, ">", payload.currId)
           state.direction = 'left'
         }
       },

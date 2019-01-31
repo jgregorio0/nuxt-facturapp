@@ -210,7 +210,6 @@ export default {
       return this.isActiveCollapse(index) ? 'Ocultar detalle' : 'Ver detalle'
     },
     downloadPdfbyGuests (guests) {
-      console.log('downloadPdfByGuests :', guests, process.client)
       if (process.client) {
         // init pdfmake
         pdfmake.vfs = pdfFonts.pdfMake.vfs

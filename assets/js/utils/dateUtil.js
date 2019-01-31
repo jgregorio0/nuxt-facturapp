@@ -67,7 +67,6 @@ export function minFrom (invoices) {
   let froms = invoices.map((invoice) => {
     return parseToMoment(invoice.from)
   })
-  console.log('froms: ' + froms)
   return moment.min(froms)
 }
 
@@ -89,7 +88,6 @@ export function maxTo (invoices) {
   let tos = invoices.map((invoice) => {
     return parseToMoment(invoice.to)
   })
-  console.log('tos: ' + tos)
   return moment.max(tos)
 }
 
